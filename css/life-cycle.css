@@ -1,0 +1,72 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EBFDCB;
+}
+
+.code {
+    padding: 1.25em 0;
+    font-size: 5vmin;
+    background: #1CAEE6;
+    font-family: "operator mono", menlo, monaco, monospace;
+    line-height: 1.6;
+    color: #fff;
+    border-radius: 7px;
+}
+
+.code p {
+    padding: 0 2.5em;
+}
+
+.code p:nth-child(1) {
+    -webkit-animation: step 1.5s -0.375s infinite;
+    animation: step 1.5s -0.375s infinite;
+}
+
+.code p:nth-child(2) {
+    -webkit-animation: step 1.5s 0s infinite;
+    animation: step 1.5s 0s infinite;
+}
+
+.code p:nth-child(3) {
+    -webkit-animation: step 1.5s 0.375s infinite;
+    animation: step 1.5s 0.375s infinite;
+}
+
+.code p:nth-child(4) {
+    -webkit-animation: step 1.5s 0.75s infinite;
+    animation: step 1.5s 0.75s infinite;
+}
+
+.code p:nth-child(5) {
+    -webkit-animation: step 1.5s 1.125s infinite;
+    animation: step 1.5s 1.125s infinite;
+}
+
+@-webkit-keyframes step {
+    from,
+    37%,
+    63%,
+    to {
+        background: transparent;
+    }
+    37.1%,
+    62.9% {
+        background: #FFBD39;
+    }
+}
+
+@keyframes step {
+    from,
+    37%,
+    63%,
+    to {
+        background: transparent;
+    }
+    37.1%,
+    62.9% {
+        background: #FFBD39;
+    }
+}
